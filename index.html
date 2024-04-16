@@ -87,6 +87,43 @@
                 </li>
             </ol>   
         </section>
+        <form>
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+                <label for="rating">Rating:</label><br>
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1">1</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">3</label><br><br>
+                <label for="preferred-date">Preferred Date:</label><br>
+                <input type="date" id="preferred-date" name="preferred-date"><br><br>
+                <label for="availability">Availability:</label><br>
+                <select id="availability" name="availability">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select><br><br>
+                <label for="interest">Interest:</label><br>
+                <input list="interest" name="interest">
+                <datalist id="interest">
+                    <option value="Web Development">
+                    <option value="Data Science">
+                    <option value="Machine Learning">
+                </datalist><br><br>
+                <label for="subscribe">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+
         <img src="free-nature-images.jpg" alt="alternate-text">
         <audio controls>
             <source src="CalmMusic.mp3" type="audio/mpeg">
@@ -103,7 +140,7 @@
           </details>
         <footer>
             <h2>Footer</h2>
-            <p>This is the footer of the page.<span style="color: red;">red</span> Word</p>
+            <p><span style="color:blue;">This is the footer of the page.</span></p>
         </footer>
     </main>
 
