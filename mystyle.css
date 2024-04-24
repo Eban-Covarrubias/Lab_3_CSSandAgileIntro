@@ -236,7 +236,7 @@ h4{
 
 }
 h5{
-    color: color(rgb 255 0 0 / 0.5); /* Example of using the color() function with sRGB color space */
+    color: rgba(255, 0, 0, 0.5); /* Red color with 50% opacity */
 }
 h6 {
     background: linear-gradient(to right, red 50%, blue 50%);
