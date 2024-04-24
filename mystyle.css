@@ -1,0 +1,243 @@
+body{
+    /* apply background styles to your elements */
+    background-color: lightblue;
+}
+
+/* Relative Units 1 */
+.relative-unit-1 {
+    font-size: 1.2em; /* em unit */
+    margin-bottom: 2rem; /* rem unit */
+    line-height: 1.5; /* unitless line-height */
+}
+/* Relative Units 2 */
+.relative-unit-2 {
+    font-size: 2.2em; /* em unit */
+    margin-bottom: 3rem; /* rem unit */
+    line-height: 2.5; /* unitless line-height */
+}
+/* Relative Units 3 */
+.relative-unit-3{
+    font-size: 3.2em; /* em unit */
+    margin-bottom: 4rem; /* rem unit */
+    line-height: 3.5; /* unitless line-height */
+}
+/* Absolute Units 1 */
+.abs-unit-1 {
+width: 200px; /* pixels */
+padding: 10pt; /* points */
+border-width: 2px; /* pixels */
+}
+/* Absolute Units 2 */
+.abs-unit-2 {
+width:300px; /* pixels */
+padding: 20pt; /* points */
+border-width: 4px; /* pixels */
+}
+/* Absolute Units 3 */
+.abs-unit-3 {
+width: 250px; /* pixels */
+padding: 15pt; /* points */
+border-width: 3px; /* pixels */
+}
+
+/* Margin */
+/* Longhand */
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Shorthand */
+.container {
+    margin: 20px 30px; /* top/bottom 20px, left/right 30px */
+    margin: 20px 30px 40px; /* top 20px, left/right 30px, bottom 40px */
+    margin: 20px 30px 40px 50px; /* top 20px, right 30px, bottom 40px, left 50px */
+}
+
+/* Auto margins */
+.container {
+    margin: auto; /* Center the container horizontally */
+}
+
+/* Padding */
+/* Longhand */
+.content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Shorthand */
+.content {
+    padding: 10px 20px; /* top/bottom 10px, left/right 20px */
+    padding: 10px 20px 15px; /* top 10px, left/right 20px, bottom 15px */
+    padding: 10px 20px 15px 25px; /* top 10px, right 20px, bottom 15px, left 25px */
+}
+
+/* Borders */
+/* Border style */
+.border-example {
+    border-style: solid; /* Solid border */
+}
+
+/* Border color */
+.border-example {
+    border-color: #000; /* Black border */
+}
+
+/* Border width */
+.border-example {
+    border-width: 2px; /* Border width of 2 pixels */
+}
+
+/* Border radius */
+.border-example {
+    border-radius: 5px; /* Border radius of 5 pixels */
+}
+/* Text alignment */
+.text-example {
+    color: #333; /* Dark gray text color */
+    text-decoration: underline; /* Underline text */
+    text-align: center; /* Center-align text */
+}
+/* Styling for demonstration */
+.container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Display Property */
+.block {
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: #e0e0e0;
+}
+
+.inline {
+    display: inline;
+    background-color: #d0d0d0;
+}
+
+/* Sizing Properties */
+.element {
+    height: 200px; /* Set the height of the element to 200 pixels */
+    width: 300px; /* Set the width of the element to 300 pixels */
+    max-width: 100%; /* Set the maximum width of the element to 100% of its containing block */
+    min-width: 100px; /* Set the minimum width of the element to 100 pixels */
+}
+
+/* Positioning Properties */
+.static {
+    position: static; /* Default position; elements are positioned according to the normal flow of the document */
+}
+
+.relative {
+    position: relative; /* Position relative to its normal position */
+}
+
+.fixed {
+    position: fixed; /* Positioned relative to the viewport, does not move when the page is scrolled */
+}
+
+.absolute {
+    position: absolute; /* Positioned relative to its closest positioned ancestor (if any), otherwise relative to the initial containing block */
+}
+
+.sticky {
+    position: sticky; /* Positioned based on the user's scroll position, initially static until a specified threshold is met */
+}
+
+/* Pseudo-classes */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hover */
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Active */
+.button:active {
+    background-color: #0056b3; /* Darker blue when clicked */
+    transform: translateY(1px); /* Move the button down slightly when clicked */
+}
+/* Flexbox Layout */
+.flex-container {
+    display: flex; /* Apply flexbox layout */
+    justify-content: space-around; /* Align items with equal space around them */
+    align-items: center; /* Align items vertically */
+}
+
+.flex-item {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid; /* Apply grid layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Divide the grid into three equal columns */
+    gap: 10px; /* Add gap between grid items */
+}
+
+.grid-item {
+    background-color: #28a745;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Font Styling */
+.custom-font {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font as the custom font */
+    font-size: 18px;
+    font-weight: 400; /* Regular font weight */
+    color: #333;
+}
+
+:root {
+  --primary-color: #336699; /* Default */
+  --primary-color: rgb(51, 102, 153); /* Fallback */
+}
+
+.element {
+  background-color: var(--primary-color);
+}
+
+
+h1{
+     /* apply colors to your HTML elements */
+    color: navy;
+    margin-left: 20px;
+}
+h2{
+    color: rgb(50, 90, 200)/* red, green, blue */
+}
+h3{
+    color: #f83/* hex codes */
+}
+h4{
+    color: hsl(30, 50, 50);/* hue, saturation, lightness*/
+
+}
+h5{
+    color: color(colorspace 20 20 20s / 0.5);   /* predefined color space, values for color space*/
+}
+h6{
+    color: color-mix(add, red 50%, blue 50%); /*method to mix colors, values & percentages of color*/
+}
