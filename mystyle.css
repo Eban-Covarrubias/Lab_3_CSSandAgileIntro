@@ -232,12 +232,12 @@ h3{
     color: #f83/* hex codes */
 }
 h4{
-    color: hsl(30, 50, 50);/* hue, saturation, lightness*/
+    color: hsl(30, 30, 30);/* hue, saturation, lightness*/
 
 }
 h5{
-    color: color(colorspace 20 20 20s / 0.5);   /* predefined color space, values for color space*/
+    color: color(srgb 255 0 0 / 0.5); /* Example of using the color() function with sRGB color space */
 }
 h6{
-    color: color-mix(add, red 50%, blue 50%); /*method to mix colors, values & percentages of color*/
+    color: color-mix(blend, red 50%, blue 50%); /*method to mix colors, values & percentages of color*/
 }
