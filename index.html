@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="mystyle.css">
   </head>
   <body>
     <main>
@@ -21,6 +22,22 @@
             <h3><i>Date & Time: 4/13/24 @ 12:30pm</i></h3>
         </header>
         <hr>
+        <div style="background-color: #f0f0f0; color: #333; padding: 20px;">
+            <h1 style="font-size: 24px; text-align: center;">Welcome to Inline CSS Example</h1>
+            <p style="font-size: 16px; line-height: 1.6;">This is an example of using inline CSS to style HTML elements.</p>
+            <button style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 5px;">Click Me</button>
+        </div>
+        <div class="text-example">
+            <p>This is a paragraph with styled text.</p>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h1>Margin Demo</h1>
+                <p>This is a demo of margin. Margin creates space outside of an element's border. In this example, the container has a margin of 50px, creating space around it.</p>
+            </div>
+        </div>
+        <p class="custom-font">This is an example of using a custom font from Google Fonts.</p>
+
         <section>
             <h2><em>Attendees</em></h2>
             <ul>
@@ -35,6 +52,119 @@
                 <li>Ritviksiddha Penchala</li>
                 <li>Sidhant Singhvi</li>
             </ul>
+        </section>
+        <div class="container">
+            <h2>Display Property Demo</h2>
+            <div class="block">Block level element (display: block)</div>
+            <span class="inline-block">Inline-block level element (display: inline-block)</span>
+        </div>
+        <div class="element">
+            <h2>Sizing Example</h2>
+            <p>This is an example element with specified height, width, max-width, and min-width.</p>
+        </div>
+        <div class="static">Static Positioning</div>
+        <div class="relative">Relative Positioning</div>
+        <div class="fixed">Fixed Positioning</div>
+        <div class="absolute">Absolute Positioning</div>
+        <div class="sticky">Sticky Positioning</div>
+
+        <a href="#" class="button">Hover over me!</a>
+
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">A</div>
+            <div class="grid-item">B</div>
+            <div class="grid-item">C</div>
+        </div>
+        <section>
+            <title>CSS Selectors Demo</title>
+    <style>
+        /* Class Selector (.class) */
+        .class-selector {
+            color: blue;
+        }
+
+        /* ID Selector (#id) */
+        #id-selector {
+            color: red;
+        }
+
+        /* Universal Selector (*) */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Element Selector (element) */
+        h1 {
+            font-size: 24px;
+        }
+
+        /* Attribute Selector (e.g. [attribute=foo]) */
+        [title="example"] {
+            font-weight: bold;
+        }
+
+        /* Pseudo-class Selector (e.g. p:hover) */
+        p:hover {
+            background-color: lightgray;
+        }
+
+        /* Selector List (element, element) */
+        h2, p {
+            margin-bottom: 20px;
+        }
+
+        /* Combinators */
+        /* Descendant Combinator (element element) */
+        div p {
+            font-style: italic;
+        }
+
+        /* Child Combinator (element > element) */
+        ul > li {
+            list-style-type: circle;
+        }
+
+        /* General sibling combinator (element ~ element) */
+        h2 ~ p {
+            font-weight: normal;
+        }
+
+        /* Adjacent sibling combinator (element + element) */
+        h2 + p {
+            color: green;
+        }
+
+        /* Combining Two Selectors (element.class) */
+        p.class-selector {
+            text-decoration: underline;
+        }
+
+        /* New Selectors */
+        /* :has() selector */
+        p:has(strong) {
+            background-color: yellow;
+        }
+
+        /* Nested Selectors */
+        /* Nested selectors */
+        .nested-selector {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .nested-selector p {
+            color: #333;
+        }
+
+        .nested-selector span {
+            font-weight: bold;
+        }
+    </style>
         </section>
         <section>
         <div>
